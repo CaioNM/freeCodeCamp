@@ -90,4 +90,32 @@ print(max(num))				#Valor mais alto na lista
 print(min(num))				#Valor mais baixo na lista
 print(sum(num))				#Soma dos valores
 print(sum(num)/len(num))	#Média
+
 print('----------------------------------')
+
+
+#Funçao Split - cria uma lista atravez de uma string, separando os itens por meio dos espaços entre as palavras -> NomeDaVariavel.split()
+abc = "São três palavras"
+print('->',abc)
+stuff = abc.split()
+print (stuff)
+print(len(stuff))
+print(stuff[0]) 		#Novamente, 0 é o primeiro item da lista
+for i in stuff:
+	print (i)
+
+nome='Caio Nunes de Moura'
+separado = nome.split()
+print(nome,'->',separado)
+
+print('----------------------------------')
+
+words = 'o e-mail dele é caionunes.moura@hotmail.com'
+pieces = words.split()
+parts = pieces[4].split('.')
+n = parts[1]
+print(n)
+print(parts)
+
+print('----------------------------------')
+
